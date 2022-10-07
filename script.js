@@ -6,6 +6,7 @@ let email = document.getElementById("email");
 let month_check = document.getElementById("month");
 let date_check = document.getElementById("date");
 let year_check = document.getElementById("year");
+let btn = document.getElementById("btn");
 
 burger_bar.addEventListener("click", function () {
   burger_bar.classList.toggle("active");
@@ -98,23 +99,33 @@ form.addEventListener("submit", function (item) {
   }
   if (
     month_check.value === "" ||
-    month_check.value === String ||
+    month_check.value <= 0 ||
     month_check.value >= 13
   ) {
     show_error(month_check, "pease check your date");
   } else if (
     date_check.value === "" ||
-    date_check.value === String ||
+    date_check.value <= 0 ||
     date_check.value >= 32
   ) {
     show_error(date_check, "pease check your date");
   } else if (
     year_check.value === "" ||
-    year_check.value === String ||
-    year_check.value >= 2005
+    year_check.value <= 0 ||
+    year_check.value >= 2005 ||
+    year_check.value <= 1900
   ) {
     show_error(year_check, "pease check your date");
   } else {
     show_success(month_check, date_check, year_check);
   }
+});
+//scroll up event
+let scroll_button = document.getElementById("scroll-up");
+
+scroll_button.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });

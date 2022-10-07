@@ -15,6 +15,10 @@
     <meta property="og:image" content="#" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/responsive.css" />
@@ -23,29 +27,34 @@
 
 <body>
     <header class="header">
-        <nav class="nav_bar">
-            <a href="index.html" class="nav_logo">Logo</a>
-            <ul class="nav_menu">
-                <li class="nav_list">
-                    <a href="index.html" class="nav_item">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="nav_item">whiskey Shop</a>
-                </li>
-                <li>
-                    <a href="#" class="nav_item">Contact</a>
-                </li>
-                <li>
-                    <a href="#" class="nav_item">About As</a>
-                </li>
-            </ul>
-            <div class="burger_bar">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+        <div class="bg-img">
+            <nav class="nav_bar">
+                <a href="index.html" class="nav_logo">Logo</a>
+                <ul class="nav_menu">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav_item">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="nav_item">whiskey Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_item">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_item">About As</a>
+                    </li>
+                </ul>
+                <div class="burger_bar">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+        </div>
+
     </header>
+    <button class="scroll-up" id="scroll-up"> Scroll Up</button>
     <section class="first-section">
         <div class="first-main-div">
             <h1 class="h1-first-title">All whiskey in one place</h1>
@@ -170,13 +179,14 @@
                     </div>
                     <div class="form-control">
                         <label for="date">Date of Birth</label>
-                        <input class="month" type="text" placeholder="MM" id="month">
-                        <input class="date" type="text" placeholder="DD" id="date">
-                        <input class="year" type="text" placeholder="YY" id="year">
+                        <input class="month" type="number" placeholder="MM" id="month">
+                        <input class="date" type="number" placeholder="DD" id="date">
+                        <input class="year" type="number" placeholder="YY" id="year">
                         <span>Error message</span>
 
                     </div>
-                    <button type="submit">Click Here</button>
+                    <button id="btn" type="submit" class="form-button"> Click Here</button>
+
                 </form>
 
             </div>

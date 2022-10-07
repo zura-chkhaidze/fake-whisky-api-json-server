@@ -4,29 +4,42 @@ body {
 /*header */
 .header {
   position: fixed;
-  height: 100px;
+  height: 200px;
   top: 0;
   left: 0;
   width: 100%;
   background-color: gray;
   z-index: 10;
 }
+.bg-img {
+  max-width: 1920px;
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 80%;
+}
 .nav_logo {
-  color: darkred;
+  color: wheat;
   font-weight: bolder;
   font-size: 30px;
   transition: 0.5s ease;
 }
 .nav_logo:hover {
-  color: black;
+  color: white;
 }
 .nav_item {
-  color: darkred;
+  color: wheat;
+  font-size: 20px;
   font-weight: 900;
   transition: 0.5s ease;
+  font-family: "Kalam", cursive;
 }
 .nav_item:hover {
-  color: black;
+  color: white;
 }
 .nav_bar {
   display: flex;
@@ -54,7 +67,7 @@ body {
 
 /* first section,first main div*/
 .first-section {
-  margin-top: 110px;
+  margin-top: 250px;
   display: flex;
 }
 .h1-first-title {
@@ -62,12 +75,14 @@ body {
   font-size: 40px;
   font-weight: bolder;
   margin-left: 20px;
+  font-family: "Peralta", cursive;
 }
 .h3-first-title {
   margin-left: 20px;
   margin-top: 30px;
   font-size: 30ox;
   font-weight: bold;
+  font-family: "Peralta", cursive;
 }
 /*slider*/
 .slider-container {
@@ -114,25 +129,35 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-150%);
-  color: darkblue;
+  color: black;
   font-weight: bold;
   padding: 10px;
   font-size: 30px;
   text-decoration: none;
   margin-left: 20px;
   border: 2px solid black;
+  transition: 0.5s ease;
+}
+.slider-container .prev:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
 .slider-container .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: darkblue;
+  color: black;
   font-weight: bold;
   padding: 10px;
   font-size: 30px;
   text-decoration: none;
   margin-left: 20px;
   border: 2px solid black;
+  transition: 0.5s ease;
+}
+.slider-container .next:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
 
 .slider-container .prev:hover {
@@ -176,24 +201,23 @@ body {
   width: 100%;
   height: 500px;
   margin-left: 100px;
+  margin-top: 100px;
 }
 .h2-first-title {
   font-size: 17px;
   font-weight: bold;
+  font-family: "Peralta", cursive;
 }
 /* validation*/
-.container {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(120, 4, 252, 0.952);
-  width: 400px;
-}
+
 h2 {
   text-align: center;
   margin: 0 0 20px;
 }
 .form {
   padding: 30px 40px;
+  border: 4px solid black;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.952);
 }
 .form-control {
   margin-bottom: 10px;
@@ -202,9 +226,10 @@ h2 {
   display: flex;
 }
 .form-control label {
-  color: #777;
+  color: black;
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 .form-control input {
   border-radius: 4px;
@@ -233,30 +258,37 @@ h2 {
   visibility: visible;
 }
 
-.form button {
+.form-button {
   cursor: pointer;
   background-color: hsl(130, 70%, 53%);
-  border: 2px sold #000000;
+  border: 1px sold #000000;
   border-radius: 4px;
-  color: #fff;
+  color: black;
   display: block;
   font-size: 16px;
   padding: 10px;
   margin-top: 10px;
   width: 100%;
+  transition: 0.5s ease;
+  font-family: "Peralta", cursive;
 }
+.form-button:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
 .month {
-  max-width: 60px;
+  max-width: 70px;
   width: 100%;
   margin: 0 auto;
 }
 .date {
-  max-width: 60px;
+  max-width: 70px;
   width: 100%;
   margin: 0 auto;
 }
 .year {
-  max-width: 60px;
+  max-width: 100px;
   width: 100%;
   margin: 0 auto;
 }
@@ -266,4 +298,22 @@ h2 {
 .val-email {
   margin: 0 auto;
   transform: translateX(13px);
+}
+/* scroll up event*/
+
+.scroll-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: 2px, solid black;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.952);
+  border-radius: 10px;
+  width: 80px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.scroll-up:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
