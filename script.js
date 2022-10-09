@@ -129,4 +129,35 @@ scroll_button.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+// fetch API GET method
+
+function Database() {
+  let request = new XMLHttpRequest();
+
+  function received_data() {
+    let return_info = this.responseText;
+
+    let script_format = JSON.parse(return_info);
+    let ul = document.createElement("ul");
+    ul.classList.add("ul-style");
+    script_format.data.forEach((element) => {
+      let li = document.createElement("li");
+      li.classList.add("style-li");
+      let p = document.createElement("p");
+      p.classList.add("style-p");
+      p.textContent = element.first_name + " " + element.last_name;
+      let img = document.createElement("img");
+      img.classList.add("style-image");
+      img.setAttribute("src", element.avatar);
+      ul.appendChild(li);
+      li.appendChild(p);
+      li.appendChild(img);
+    });
+    document.querySelector(".bayers-div").appendChild(ul);
+  }
+  request.addEventListener("load", received_data);
+  request.open("GET", "https://reqres.in/api/users?page=2");
+  request.send();
+}
+Database();
 
