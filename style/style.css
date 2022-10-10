@@ -324,7 +324,11 @@ h2 {
   background-color: darkgreen;
 }
 /* top bayers div*/
+.bayers-section{
+margin-top: 100px;
+}
 .bayers-div{
+  margin-top: 300px;
   background-color:white;
   max-width: 60%;
   margin: 0 auto;

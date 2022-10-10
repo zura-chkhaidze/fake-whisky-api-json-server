@@ -2,11 +2,16 @@
 let burger_bar = document.querySelector(".burger_bar");
 let nav_menu = document.querySelector(".nav_menu");
 let username = document.getElementById("username");
+let password = document.getElementById("password");
+let password2 = document.getElementById("password2");
 let email = document.getElementById("email");
 let month_check = document.getElementById("month");
 let date_check = document.getElementById("date");
 let year_check = document.getElementById("year");
 let btn = document.getElementById("btn");
+let gender_male = document.getElementById('gendermale');
+let gender_female = document.getElementById('genderfemale');
+let agree = document.getElementById('agree');
 
 burger_bar.addEventListener("click", function () {
   burger_bar.classList.toggle("active");
@@ -97,29 +102,53 @@ form.addEventListener("submit", function (item) {
   } else {
     show_success(email);
   }
-  if (
-    month_check.value === "" ||
-    month_check.value <= 0 ||
-    month_check.value >= 13
-  ) {
-    show_error(month_check, "pease check your date");
-  } else if (
-    date_check.value === "" ||
-    date_check.value <= 0 ||
-    date_check.value >= 32
-  ) {
-    show_error(date_check, "pease check your date");
-  } else if (
-    year_check.value === "" ||
-    year_check.value <= 0 ||
-    year_check.value >= 2005 ||
-    year_check.value <= 1900
-  ) {
-    show_error(year_check, "pease check your date");
+  if (password.value === "") {
+    show_error(password, "Password is  empty");
   } else {
-    show_success(month_check, date_check, year_check);
+    show_success(password);
   }
+  if (password2.value === "") {
+    show_error(password2, "password is empty");
+  } else if (password.value !== password2.value) {
+    show_error(password2, "passwords are not same");
+  } else {
+    show_success(password2);
+  }
+  if (
+    gender_male.checked ===false &&    gender_male.checked === false
+  ) {
+    show_error(gender_female, "check someone");
+  } else if (gender_male.checked === true && gender_female.checked === true) {
+    show_error(gender_female, "both checked");
+  } else {
+    show_success(gender_female,gender_male);
+  }
+  if(agree.checked === false){
+    show_error(agree,"check it");
+  }else{
+    show_success(agree);
+  }
+ 
+  localStorage.setItem("username", username.value);
+  localStorage.setItem("email", email.value);
+  localStorage.setItem("password", password.value);
+  localStorage.setItem("password2", password2.value);
+  localStorage.setItem("gendermale", gender_male.value);
+  localStorage.setItem("genderfemale", gender_female.value);
+  localStorage.setItem("agree", agree.value);
+
+  if (localStorage.count) {
+    localStorage.count = Number(localStorage.count) + 1;
+  } else {
+    localStorage.count = 1;
+  }
+ 
+
+
 });
+
+ 
+
 //scroll up event
 let scroll_button = document.getElementById("scroll-up");
 
@@ -160,4 +189,3 @@ function Database() {
   request.send();
 }
 Database();
-

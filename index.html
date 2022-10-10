@@ -17,7 +17,7 @@
     <link rel="icon" href="#" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
@@ -169,20 +169,40 @@
 
                     <div class="form-control">
                         <label for="username">Username</label>
-                        <input class="val-username" type="text" id="username" placeholder="Enter username" />
+                        <input class="username" type="text" id="username" placeholder="Enter username" />
                         <span>Error message</span>
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label>
-                        <input class="val-email" type="text" id="email" placeholder="Enter email" />
+                        <input class="email" type="text" id="email" placeholder="Enter email" />
                         <span>Error message</span>
                     </div>
                     <div class="form-control">
-                        <label for="date">Date of Birth</label>
-                        <input class="month" type="number" placeholder="MM" id="month">
-                        <input class="date" type="number" placeholder="DD" id="date">
-                        <input class="year" type="number" placeholder="YY" id="year">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password" />
                         <span>Error message</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="password2">Confirm Passsword</label>
+                        <input type="password" id="password2" placeholder="Enter password again" />
+                        <span>Error message</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="gendermale">MALE</label>
+                        <input type="radio" class="gender"  id="gendermale" />
+                        <span>Error message</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="genderfemale" class="gender">FEMALE</label>
+                        <input type="radio" class="gender"  id="genderfemale" />
+                        <span>Error message</span>
+                    </div>
+        
+                    <div class="form-control">
+                        <label for="agree">I agree terms and conditions</label>
+                        <input type="checkbox" name="agree" id="agree" />
+                        <span>Error message</span>
+                    </div>
 
                     </div>
                     <button id="btn" type="submit" class="form-button"> Click Here</button>
@@ -194,7 +214,7 @@
         </div>
 
     </section>
-    <section>
+    <section class="bayers-section">
         <div class="bayers-div">
             <h2 class=" top-bayers">There is our best  top 6 bayers , if you want to be there ,bay more whiskey!</h2>
   
