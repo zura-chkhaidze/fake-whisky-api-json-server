@@ -1,0 +1,19 @@
+{
+  "name": "final-project-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zura-chkhaidze/final-project-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zura-chkhaidze/final-project-js/issues"
+  },
+  "homepage": "https://github.com/zura-chkhaidze/final-project-js#readme"
+}
