@@ -4,13 +4,38 @@
       "id": 1,
       "name": "black label",
       "images": "./images/black-label.png",
-      "price": "60"
+      "price": "60$"
     },
     {
       "id": 2,
-      "name": "black label",
+      "name": "Jameson",
       "images": "./images/jameson.png",
-      "price": "60"
+      "price": "60$"
+    },
+    {
+      "id": 3,
+      "name": "Jura",
+      "images": "./images/jura.png",
+      "price": "60$"
+    },
+    {
+      "id": 4,
+      "name": "Monkey Shoulder",
+      "images": "./images/monkey-Shoulder.png",
+      "price": "60$"
+    },
+    {
+      "id": 5,
+      "name": "sea fog",
+      "images": "./images/sea-fog.png",
+      "price": "60$"
+    },
+    {
+      "id": 6,
+      "name": "two worlds",
+      "images": "./images/two worlds.png",
+      "price": "60$"
     }
+    
   ]
 }

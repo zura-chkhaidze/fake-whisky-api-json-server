@@ -159,6 +159,9 @@ scroll_button.addEventListener("click", function () {
   });
 });
 // fetch API GET method
+let delete_btn = document.getElementById("delete-btn");
+let bayers_div = document.querySelector(".bayers-div");
+
 
 function Database() {
   let request = new XMLHttpRequest();
@@ -187,5 +190,17 @@ function Database() {
   request.addEventListener("load", received_data);
   request.open("GET", "https://reqres.in/api/users?page=2");
   request.send();
+
+  delete_btn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    let id = event.target.getAttribute("data-id");
+    let url = `https://reqres.in/api/users?page=2/${id}`;
+    fetch(url, {
+      method: "DELETE",
+    }).then(() => bayers_div.remove());
+  });
+
+  main.appendChild(bayers_div);
+  console.log(bayers_div);
 }
 Database();

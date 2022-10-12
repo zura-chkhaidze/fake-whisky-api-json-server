@@ -368,3 +368,62 @@ margin-top: 100px;
   margin-left: 10px;
   border: 2px solid black;
 }
+.delete{
+  transform: translateY(-20px);
+  border: 2px solid black;
+  background-color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+/* shop first section*/
+.first-shop-section{
+  margin-top: 250px;
+}
+.whiskey-main-div{
+  display: grid;
+
+  grid-template-columns:  repeat(auto-fit,minmax(300px,auto));
+  grid-gap: 50px;
+  margin: 50px auto;
+  max-width: 1920px;
+  width: 100%;
+  padding: 28px;
+}
+.shop-posts{
+
+  max-width: 600px;
+  width: 100%;
+  background-color: wheat;
+  border: 5px solid black;
+  padding: 150px;
+  border-radius: 40px;
+}
+.shop-images{
+  max-height: 300px;
+  height:100% ;
+  display: block;
+  transform: translateX(-100px);
+}
+.drink-name{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  font-weight: bolder;
+  font-size: 30px;
+  margin-left: 40px;
+
+}
+.prices{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-top: 100px;
+
+  transform: translateY(-200px);
+
+  margin-left: 40px;
+}
+/*search*/
