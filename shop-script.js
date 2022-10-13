@@ -10,6 +10,7 @@ let randerPosts = async () => {
     <img class="shop-images" src="${element.images}" alt="">
     <h2 class="drink-name">${element.name}</h2>
     <h3 class="prices">${element.price}</h3>
+    <h3 class="click-to-buy">${element.buy}</h3>
   </div>
     `;
   });
@@ -57,3 +58,13 @@ const display_whiskey = (whiskey_data) => {
 };
 
 load_whiskey();
+
+//scroll up event
+let scroll_button = document.querySelector(".scroll-up1");
+
+scroll_button.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

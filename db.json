@@ -4,37 +4,71 @@
       "id": 1,
       "name": "black label",
       "images": "./images/black-label.png",
-      "price": "60$"
+      "price": "PRICE: 80$",
+      "buy": "Click to BUY"
     },
     {
       "id": 2,
       "name": "Jameson",
       "images": "./images/jameson.png",
-      "price": "60$"
+      "price": "PRICE: 55$",
+      "buy": "Click to BUY"
     },
     {
       "id": 3,
       "name": "Jura",
       "images": "./images/jura.png",
-      "price": "60$"
+      "price": "PRICE: 110$",
+      "buy": "Click to BUY"
     },
     {
       "id": 4,
       "name": "Monkey Shoulder",
       "images": "./images/monkey-Shoulder.png",
-      "price": "60$"
+      "price": "PRICE: 52$",
+      "buy": "Click to BUY"
     },
     {
       "id": 5,
       "name": "sea fog",
       "images": "./images/sea-fog.png",
-      "price": "60$"
+      "price": "PRICE: 63$",
+      "buy": "Click to BUY"
     },
     {
       "id": 6,
       "name": "two worlds",
-      "images": "./images/two worlds.png",
-      "price": "60$"
+      "images": "./images/two-worlds.png",
+      "price": "PRICE: 200$",
+      "buy": "Click to BUY"
+    },
+    {
+      "id": 7,
+      "name": "Jack Daniels",
+      "images": "./images/jack-daniels.png",
+      "price": "PRICE: 50$",
+      "buy": "Click to BUY"
+    },
+    {
+      "id": 8,
+      "name": "Maker's Mark",
+      "images": "./images/makers-mark.png",
+      "price": "PRICE: 65$",
+      "buy": "Click to BUY"
+    },
+    {
+      "id": 9,
+      "name": "Teeling",
+      "images": "./images/teeling.png",
+      "price": "PRICE: 48$",
+      "buy": "Click to BUY"
+    },
+    {
+      "id": 10,
+      "name": "West Cork",
+      "images": "./images/west-cork.png",
+      "price": "PRICE: 86$",
+      "buy": "Click to BUY"
     }
     
   ]

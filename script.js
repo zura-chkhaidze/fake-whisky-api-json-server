@@ -143,7 +143,7 @@ form.addEventListener("submit", function (item) {
 });
 
 //scroll up event
-let scroll_button = document.getElementById("scroll-up");
+let scroll_button = document.querySelector(".scroll-up");
 
 scroll_button.addEventListener("click", function () {
   window.scrollTo({
