@@ -9,9 +9,9 @@ let month_check = document.getElementById("month");
 let date_check = document.getElementById("date");
 let year_check = document.getElementById("year");
 let btn = document.getElementById("btn");
-let gender_male = document.getElementById('gendermale');
-let gender_female = document.getElementById('genderfemale');
-let agree = document.getElementById('agree');
+let gender_male = document.getElementById("gendermale");
+let gender_female = document.getElementById("genderfemale");
+let agree = document.getElementById("agree");
 
 burger_bar.addEventListener("click", function () {
   burger_bar.classList.toggle("active");
@@ -114,21 +114,19 @@ form.addEventListener("submit", function (item) {
   } else {
     show_success(password2);
   }
-  if (
-    gender_male.checked ===false &&    gender_male.checked === false
-  ) {
+  if (gender_male.checked === false && gender_male.checked === false) {
     show_error(gender_female, "check someone");
   } else if (gender_male.checked === true && gender_female.checked === true) {
     show_error(gender_female, "both checked");
   } else {
-    show_success(gender_female,gender_male);
+    show_success(gender_female, gender_male);
   }
-  if(agree.checked === false){
-    show_error(agree,"check it");
-  }else{
+  if (agree.checked === false) {
+    show_error(agree, "check it");
+  } else {
     show_success(agree);
   }
- 
+
   localStorage.setItem("username", username.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("password", password.value);
@@ -142,12 +140,7 @@ form.addEventListener("submit", function (item) {
   // } else {
   //   localStorage.count = 1;
   // }
- 
-
-
 });
-
- 
 
 //scroll up event
 let scroll_button = document.getElementById("scroll-up");
@@ -162,7 +155,6 @@ scroll_button.addEventListener("click", function () {
 let delete_btn = document.getElementById("delete-btn");
 let bayers_div = document.querySelector(".bayers-div");
 let bayers_section = document.getElementById(".bayers-section");
-
 
 function Database() {
   let request = new XMLHttpRequest();
@@ -201,7 +193,7 @@ function Database() {
     }).then(() => bayers_div.remove());
   });
 
-  (bayers_div);
+  bayers_div;
   console.log(bayers_div);
 }
 Database();

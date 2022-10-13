@@ -19,29 +19,41 @@ let randerPosts = async () => {
 window.addEventListener("DOMContentLoaded", () => randerPosts());
 
 //search
-let whiskey_list = document.getElementById("whiskey-list");
-let search = document.getElementById("search");
-let whiskey_data = {};
-console.log(search);
-search.addEventListener("keydown", (e) => {
-  let searchString = e.target.value;
-  let filtered_list = whiskey_data.filter((whiskey) => {
-    return whiskey.name.includes(searchString);
-    
-  });
 
-  console.log(filtered_list);
+const whiskey_list = document.getElementById("whiskey_list");
+const search = document.getElementById("search");
+let whiskey_names = [];
+
+search.addEventListener("keyup", (e) => {
+  const search_string = e.target.value.toLowerCase();
+
+  const filtered_whiskeyes = whiskey_names.filter((whiskey) => {
+    return whiskey.name.toLowerCase().includes(search_string);
+  });
+  display_whiskey(filtered_whiskeyes);
 });
-let load_whiskey = async () => {
+
+const load_whiskey = async () => {
   try {
-    let response = await fetch("http://localhost:3000/whiskey_data");
-    whiskey_data = await response.json();
-    console.log(whiskey_data);
+    const res = await fetch("http://localhost:3000/whiskey_data");
+    whiskey_names = await res.json();
+    display_whiskey(whiskey_names);
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };
 
+const display_whiskey = (whiskey_data) => {
+  const html_string = whiskey_data
+    .map((whiskey) => {
+      return `
+            <li class="character">
+                <h2>${whiskey.name}</h2>
+            </li>
+        `;
+    })
+    .join("");
+  whiskey_list.innerHTML = html_string;
+};
 
 load_whiskey();
-
