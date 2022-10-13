@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="whiskey shop" />
-    <meta name="keywords" content="whiskey shop, sell ,buy, information," />
-    <meta name="author" content="Zura Chkhaidze" />
-    <meta property="og:url" content="#" />
-    <meta property="og:type" content="online shop" />
-    <meta property="og:title" content="whiskey" />
-    <meta
-      property="og:description"
-      content="whiskey shop, sell ,buy, information"
-    />
-    <meta property="og:image" content="#" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-    <link rel="icon" href="#" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Peralta&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
-    <title>whiskey shop</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="bg-img">
-        <nav class="nav_bar">
-          <a href="index.html" class="nav_logo">Logo</a>
-          <ul class="nav_menu">
-            <li class="nav_list">
-              <a href="index.html" class="nav_item">Home</a>
-            </li>
-            <li>
-              <a href="shop.html" class="nav_item">whiskey Shop</a>
-            </li>
-            <li>
-              <a href="#" class="nav_item">Contact</a>
-            </li>
-            <li>
-              <a href="#" class="nav_item">About As</a>
-            </li>
-          </ul>
-          <div class="burger_bar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <button class="scroll-up" id="scroll-up">Scroll Up</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="whiskey shop" />
+  <meta name="keywords" content="whiskey shop, sell ,buy, information," />
+  <meta name="author" content="Zura Chkhaidze" />
+  <meta property="og:url" content="#" />
+  <meta property="og:type" content="online shop" />
+  <meta property="og:title" content="whiskey" />
+  <meta property="og:description" content="whiskey shop, sell ,buy, information" />
+  <meta property="og:image" content="#" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <link rel="icon" href="#" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/responsive.css" />
+  <title>whiskey shop</title>
+</head>
 
-    <section class="first-shop-section">
-      <div class="search-main-div">
-        <div class="search-div">
-          <input type="search" id="search" placeholder="Search whiskey" />
+<body>
+  <header class="header">
+    <div class="bg-img">
+      <nav class="nav_bar">
+        <a href="index.html" class="nav_logo">Logo</a>
+        <ul class="nav_menu">
+          <li class="nav_list">
+            <a href="index.html" class="nav_item">Home</a>
+          </li>
+          <li>
+            <a href="shop.html" class="nav_item">whiskey Shop</a>
+          </li>
+          <li>
+            <a href="#" class="nav_item">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="nav_item">About As</a>
+          </li>
+        </ul>
+        <div class="burger_bar">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <ul id="whiskey-result" class="whiskey-result"></ul>
-      </div>
-    
+      </nav>
+    </div>
+  </header>
+  <button class="scroll-up" id="scroll-up">Scroll Up</button>
 
-      <div id="whiskey-main-div"></div>
-    </section>
-    <script src="shop-script.js"></script>
-  </body>
+  <section class="first-shop-section">
+
+    <div class="search-div" id="search-wrapper">
+      <input type="search" id="search" name="search" placeholder="Search whiskey" />
+    </div>
+    <div class="list-div">
+      <ul id="whiskey-list"></ul>
+
+    </div>
+    <ul id="whiskey-result" class="whiskey-result"></ul>
+
+
+    <div id="whiskey-main-div"></div>
+  </section>
+  <script src="shop-script.js"></script>
+</body>
+
 </html>

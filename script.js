@@ -137,11 +137,11 @@ form.addEventListener("submit", function (item) {
   localStorage.setItem("genderfemale", gender_female.value);
   localStorage.setItem("agree", agree.value);
 
-  if (localStorage.count) {
-    localStorage.count = Number(localStorage.count) + 1;
-  } else {
-    localStorage.count = 1;
-  }
+  // if (localStorage.count) {
+  //   localStorage.count = Number(localStorage.count) + 1;
+  // } else {
+  //   localStorage.count = 1;
+  // }
  
 
 
@@ -161,6 +161,7 @@ scroll_button.addEventListener("click", function () {
 // fetch API GET method
 let delete_btn = document.getElementById("delete-btn");
 let bayers_div = document.querySelector(".bayers-div");
+let bayers_section = document.getElementById(".bayers-section");
 
 
 function Database() {
@@ -200,7 +201,7 @@ function Database() {
     }).then(() => bayers_div.remove());
   });
 
-  main.appendChild(bayers_div);
+  (bayers_div);
   console.log(bayers_div);
 }
 Database();

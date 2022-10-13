@@ -379,7 +379,7 @@ margin-top: 100px;
 }
 /* shop first section*/
 .first-shop-section{
-  margin-top: 250px;
+  margin-top: 270px;
 }
 .whiskey-main-div{
   display: grid;
@@ -427,3 +427,6 @@ margin-top: 100px;
   margin-left: 40px;
 }
 /*search*/
+.search-div{
+  margin-bottom: 100px;
+}
