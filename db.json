@@ -3,72 +3,82 @@
     {
       "id": 1,
       "name": "black label",
-      "images": "./images/black-label.png",
+      "images": "./images/black-label.png", 
       "price": "PRICE: 80$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Johnnie Walker Black Label is a true icon, recognised as the benchmark for all other deluxe blends. Created using only whiskies aged for a minimum of 12 years from the four corners of Scotland, Johnnie Walker Black Label has an unmistakably smooth, deep, complex character."
     },
     {
       "id": 2,
       "name": "Jameson",
       "images": "./images/jameson.png",
       "price": "PRICE: 55$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Jameson Black Barrel is a special blend of Jameson Irish Whiskey, made with aged double-distilled spirits and matured in deep charred oak barrels. The result is a smoother, richer whiskey with a complex taste. Jameson Black Barrel is perfect for sipping neat or on the rocks."
     },
     {
       "id": 3,
       "name": "Jura",
       "images": "./images/jura.png",
       "price": "PRICE: 110$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description": "Matured in a American white oak ex-bourbon barrels for a sweet finish. A refined balance of rich fruit and gentle smoky notes. Amber gold in colour with aromas of vanilla spice, citrus and a hint of sea spray, followed by cinnamon, pears, pecans and toffee fudge in the aftertaste"
     },
     {
       "id": 4,
       "name": "Monkey Shoulder",
       "images": "./images/monkey-Shoulder.png",
       "price": "PRICE: 52$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Monkey Shoulder is a smooth, creamy, supple and very malty Scotch which works superbly well neat, over ice, or in whisky cocktails (where it really excel So if you're after a whisky that's fun, full of flavour, and has a bit of history behind it, then pick up a bottle of Monkey Shoulder. You won't be disappointed."
     },
     {
       "id": 5,
       "name": "sea fog",
       "images": "./images/sea-fog.png",
       "price": "PRICE: 63$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Aged for over 5 years, Sea Fog Rye features the classic spicy distillate of American rye with layers of vanilla, brown sugar, and smoke. It is an unconventional whiskey from a place known by many as the city by the sea. Awarded a 90 by Whisky Advocate for refined character and style."
     },
     {
       "id": 6,
       "name": "two worlds",
       "images": "./images/two-worlds.png",
       "price": "PRICE: 200$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Two Worlds Whiskey is the first luxury American whiskey. crafted exclusívely for France. Named to honor Marquis de La Fayette, “the hero of two worlds,” Two Worlds Whiskey celebrates the historic French American alliance by sharing the best whiskey America has to offer with her first ally, France."
     },
     {
       "id": 7,
       "name": "Jack Daniels",
       "images": "./images/jack-daniels.png",
       "price": "PRICE: 50$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Nose: Light with plenty of sweetness. There are hints of dry spice and oily nuts, a touch of smoke. Palate: Quite smooth and soft with notes of banana milkshake, a mixed nut note, a touch of caramel with crème anglaise. Finish: Sweet with a little cereal sweetness and toasty oak."
     },
     {
       "id": 8,
       "name": "Maker's Mark",
       "images": "./images/makers-mark.png",
       "price": "PRICE: 65$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Never bitter or sharp, Maker's Mark® is made with soft red winter wheat, instead of the usual rye, for a one-of-a-kind, full-flavored bourbon that's easy to drink. To ensure consistency, we rotate every barrel by hand and age our bourbon to taste, not time."
     },
     {
       "id": 9,
       "name": "Teeling",
       "images": "./images/teeling.png",
       "price": "PRICE: 48$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"Inspired by both traditional and unconventional techniques in distillation and maturation through unique cask finishes, Teeling Whiskey is creating small batch bottlings of true character, never tasted before, raising the bar for Irish Whiskey with over 300 International Whiskey awards."
     },
     {
       "id": 10,
       "name": "West Cork",
       "images": "./images/west-cork.png",
       "price": "PRICE: 86$",
-      "buy": "Click to BUY"
+      "buy": "Click to BUY",
+      "description":"The West Cork Irish Whiskey Bourbon cask is 40% abv, 80 proof. The juice is a blended Irish whiskey containing 75% grain whiskey and 25% malt whiskey, with no age statement (whispers hint 3+ years). This spirit matures in first-fill bourbon casks and generates a typical smooth Irish whiskey experience."
     }
     
   ]

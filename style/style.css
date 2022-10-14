@@ -322,11 +322,13 @@ h2 {
   cursor: pointer;
   transition: 0.8s ease;
   z-index: 6;
+  opacity: 20%;
 }
 .scroll-up:hover,
 .scroll-up1:hover {
   cursor: pointer;
   background-color: darkgreen;
+  opacity: 80%;
 }
 /* top bayers div*/
 .bayers-section {
@@ -431,6 +433,13 @@ h2 {
 
   margin-left: 40px;
 }
+.description {
+  font-size: 15px;
+  transform: translateY(-250px);
+  text-align: center;
+  font-family: "Peralta", cursive;
+  border: 2px solid black;
+}
 .click-to-buy {
   text-align: center;
   font-family: "Peralta", cursive;
@@ -474,8 +483,136 @@ h2 {
   font-family: "Peralta", cursive;
   background-color: white;
   transition: 0.5s ease;
+  opacity: 10%;
 }
 #whiskey_list:hover {
   cursor: pointer;
   background-color: darkgreen;
+  opacity: 80%;
+}
+/* footer*/
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  background-color: rgb(136, 125, 233);
+  display: flex;
+}
+.footer-box-1 {
+  max-width: 260px;
+  width: 100%;
+  height: 191px;
+  margin-top: 90px;
+  margin-left: 139px;
+}
+.box-1-h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "DynaPuff", cursive;
+}
+.box-1-li {
+  font-size: 14px;
+  max-width: 150px;
+  margin-top: 5px;
+  color: black;
+  font-family: "DynaPuff", cursive;
+}
+.footer-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+.footer-logos i:nth-child(1) {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #f5deb3;
+}
+.footer-logos i:nth-child(2) {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #f28e1c;
+}
+.footer-logos i:nth-child(3) {
+  font-size: 35px;
+  margin-right: 15px;
+  color: gold;
+}
+.footer-box-2 {
+  max-width: 200px;
+  width: 100%;
+  height: 155px;
+  margin-left: 200px;
+  margin-top: 90px;
+}
+.box-2-h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  font-family: "DynaPuff", cursive;
+  margin-bottom: 20px;
+}
+.box-2-li {
+  font-size: 17px;
+  color: black;
+  font-family: "DynaPuff", cursive;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+.footer-box-3 {
+  max-width: 150px;
+  width: 100%;
+  height: 155px;
+  margin-left: 81px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+
+.footer-box-3 p:nth-child(1) {
+  font-size: 30px;
+  font-family: "DynaPuff", cursive;
+  color: white;
+}
+.footer-box-3 p:nth-child(2) {
+  margin-bottom: 7px;
+  font-family: "DynaPuff", cursive;
+  color: blue;
+}
+.footer-box-3 p:nth-child(3) {
+  margin-bottom: 7px;
+  font-family: "DynaPuff", cursive;
+  color: #dd2a7b;
+}
+.footer-box-3 p:nth-child(4) {
+  margin-bottom: 7px;
+  font-family: "DynaPuff", cursive;
+  color: darkred;
+}
+.footer-box-3 p:nth-child(5) {
+  margin-bottom: 7px;
+  font-family: "DynaPuff", cursive;
+  color: #ff0000;
+}
+.footer-box-3 p:nth-child(6) {
+  margin-bottom: 7px;
+  font-family: "DynaPuff", cursive;
+  color: #0077b5;
+}
+
+.footer-box-4 {
+  max-width: 198px;
+  width: 100%;
+  height: 145px;
+  margin-left: 81px;
+  margin-top: 90px;
+}
+.footer-info {
+  margin-top: 10px;
+  font-size: 17px;
+  color: black;
+  font-family: "DynaPuff", cursive;
+  border: 3px solid black;
 }
