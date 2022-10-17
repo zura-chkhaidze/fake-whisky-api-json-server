@@ -616,3 +616,101 @@ h2 {
   font-family: "DynaPuff", cursive;
   border: 3px solid black;
 }
+/* About us*/
+.h2-map {
+  display: none;
+}
+.map {
+  max-width: 1920px;
+  width: 100%;
+  height: 300px;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  margin: 0 auto;
+}
+.google map {
+  max-width: 1920px;
+  max-width: 100%;
+  height: 300px;
+  width: 100%;
+}
+.input_main_div{
+  margin-top: 200px;
+  display: flex;
+}
+.draw-number{
+  margin-top: 300px;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  margin-left: 100px;
+  border: 3px solid red;
+  outline: none;
+}
+.draw-btn{
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  margin-left: 100px;
+  transition: 0.5s ease;
+  
+}
+.draw-btn:hover{
+  cursor: pointer;
+  background-color: green;
+
+}
+.conatact-h3-1{
+  width: 100%;
+  height: 50px;
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact-h3{
+  font-size: 40px;
+  font-weight: bolder;
+
+
+}
+.textarea{
+  max-width:500px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  box-shadow: 0 2px 10px rgba(5, 5, 5, 0.952);
+  margin-left: 20px;
+  margin-top: 20px;
+  outline: none;
+  
+}
+
+
+.info-tittle{
+  font-size: 40px;
+  text-align: center;
+  font-family: "DynaPuff", cursive;
+}
+.info-main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+
+}
+.info-icons{
+  font-size: 40px;
+  color: green;
+}
+.info-title{
+  font-size: 20px;
+}
+.info-info{
+  font-size: 20px;
+}
+
+
+
+

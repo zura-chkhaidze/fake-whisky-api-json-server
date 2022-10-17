@@ -5,9 +5,6 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 let password2 = document.getElementById("password2");
 let email = document.getElementById("email");
-let month_check = document.getElementById("month");
-let date_check = document.getElementById("date");
-let year_check = document.getElementById("year");
 let btn = document.getElementById("btn");
 let gender_male = document.getElementById("gendermale");
 let gender_female = document.getElementById("genderfemale");
@@ -56,14 +53,12 @@ function showImage(item) {
 showImage(slideIndex);
 
 function plusIndex(next) {
-  "use strict";
-
+ 
   showImage((slideIndex += next));
 }
 
 function currentSlide(prev) {
-  "use strict";
-
+ 
   showImage((slideIndex = prev));
 }
 
@@ -127,6 +122,11 @@ form.addEventListener("submit", function (item) {
     show_success(agree);
   }
 
+  
+  
+ 
+ 
+
   localStorage.setItem("username", username.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("password", password.value);
@@ -151,7 +151,7 @@ scroll_button.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-// fetch API GET method
+// fetch API GET  and DELETE method
 let delete_btn = document.getElementById("delete-btn");
 let bayers_div = document.querySelector(".bayers-div");
 let bayers_section = document.getElementById(".bayers-section");
