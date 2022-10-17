@@ -1,45 +1,50 @@
 /*nav bar respo*/
-@media (max-width:768px) {
-    .burger_bar{
-        display: block;
-        position: fixed;
-        margin-top: 30px;
-    }
-    .nav_logo{
-        display: none;
-    }
-    .burger_bar.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .burger_bar.active .bar:nth-child(1){
-        transform: translateY(10px) rotate(45deg);
-    }
-    .burger_bar.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-45deg);
-    }
-    .nav_menu{
-        position: fixed;
-        max-width: 200px;
-        min-width: 200px;
-        width: 100%;
-        margin-left: -100%;
-        margin-top:210px;
-        background-color:gray;
-        border-radius:30px;
-        width: 30%;
-        flex-direction: column;
-        text-align:center;
-        transition: 0.5s;
-        transform: translateX(-30px);
-    }
-    .nav_item{
-        margin: 15px 0;
-    }
-    .nav_item{color:darkred; font-weight: 900; transition: 0.5s ease;}
-    .nav_item:hover{color: black;}
-    .nav_menu.active{
-        margin-left: 0;
-    }
-
-    
+@media (max-width: 768px) {
+  .burger_bar {
+    display: block;
+    position: fixed;
+    margin-top: 30px;
+  }
+  .nav_logo {
+    display: none;
+  }
+  .burger_bar.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger_bar.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .burger_bar.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .nav_menu {
+    position: fixed;
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+    margin-left: -100%;
+    margin-top: 210px;
+    background-color: black;
+    border-radius: 30px;
+    width: 30%;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 70%;
+    transform: translateX(-30px);
+  }
+  .nav_item {
+    margin: 15px 0;
+  }
+  .nav_item {
+    color: white;
+    font-weight: 900;
+    transition: 0.5s ease;
+  }
+  .nav_item:hover {
+    color: gold;
+  }
+  .nav_menu.active {
+    margin-left: 0;
+  }
 }

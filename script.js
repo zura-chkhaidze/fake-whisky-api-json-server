@@ -1,4 +1,3 @@
-//burger bar
 let burger_bar = document.querySelector(".burger_bar");
 let nav_menu = document.querySelector(".nav_menu");
 let username = document.getElementById("username");
@@ -9,6 +8,7 @@ let btn = document.getElementById("btn");
 let gender_male = document.getElementById("gendermale");
 let gender_female = document.getElementById("genderfemale");
 let agree = document.getElementById("agree");
+//burger bar
 
 burger_bar.addEventListener("click", function () {
   burger_bar.classList.toggle("active");
@@ -24,8 +24,6 @@ document.querySelectorAll(".nav_item").forEach((y) =>
 let slideIndex = 1;
 
 function showImage(item) {
-  "use strict";
-
   let slide = document.getElementsByClassName("slides"),
     dots = document.getElementsByClassName("dots"),
     i;
@@ -53,12 +51,10 @@ function showImage(item) {
 showImage(slideIndex);
 
 function plusIndex(next) {
- 
   showImage((slideIndex += next));
 }
 
 function currentSlide(prev) {
- 
   showImage((slideIndex = prev));
 }
 
@@ -121,25 +117,22 @@ form.addEventListener("submit", function (item) {
   } else {
     show_success(agree);
   }
+  function check() {
+    stored_name = localStorage.setItem("username", username.value);
+    stored_email = localStorage.setItem("email", email.value);
+    stored_password = localStorage.setItem("password", password.value);
+    stored_password2 = localStorage.setItem("password2", password2.value);
+    stored_male = localStorage.setItem("gendermale", gender_male.checked);
+    stored_female = localStorage.setItem("genderfemale", gender_female.checked);
+    stored_agree = localStorage.setItem("agree", agree.checked);
+  }
+  check();
 
-  
-  
- 
- 
-
-  localStorage.setItem("username", username.value);
-  localStorage.setItem("email", email.value);
-  localStorage.setItem("password", password.value);
-  localStorage.setItem("password2", password2.value);
-  localStorage.setItem("gendermale", gender_male.value);
-  localStorage.setItem("genderfemale", gender_female.value);
-  localStorage.setItem("agree", agree.value);
-
-  // if (localStorage.count) {
-  //   localStorage.count = Number(localStorage.count) + 1;
-  // } else {
-  //   localStorage.count = 1;
-  // }
+  if (localStorage.count) {
+    localStorage.count = Number(localStorage.count) + 1;
+  } else {
+    localStorage.count = 1;
+  }
 });
 
 //scroll up event
