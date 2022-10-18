@@ -48,3 +48,128 @@
     margin-left: 0;
   }
 }
+/*footer responsive*/
+@media (max-width: 1300px) {
+  .footer-box-3 {
+    display: none;
+  }
+}
+@media (max-width: 910px) {
+  .footer-box-2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer-box-4 {
+    display: none;
+  }
+ 
+}
+@media (max-width: 620px) {
+  .footer {
+    display: none;
+  }
+}
+/*home page responsive*/
+@media (max-width: 1024px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buyers-section {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 840px) {
+  .buyers-section {
+    display: none;
+  }
+}
+@media (max-width: 610px) {
+  .form {
+    max-width: 300px;
+    width: 100%;
+  }
+  .form-control {
+    max-width: 300px;
+    width: 100%;
+  }
+  .h2-first-title {
+    margin-left: -30px;
+  }
+  .username {
+    max-width: 150px;
+    margin-left: 5px;
+  }
+  .email {
+    max-width: 150px;
+    margin-left: 19px;
+  }
+  .password {
+    max-width: 150px;
+    margin-left: 7px;
+  }
+  .password2 {
+    max-width: 150px;
+    margin-left: 15px;
+  }
+  .h2-first-title{
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .slider-container {
+    margin-left: 30px;
+  }
+}
+/*contact page*/
+
+@media (max-width: 670px) {
+  .textarea{
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+  }
+  .draw-number{
+    margin-top: 100px;
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+
+  }
+  .draw-btn{
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+  }
+  .conatact-h3-1 {
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+    color: purple;
+    font-weight: bold;
+    margin-top: 5px;
+    transform: translateX(-100px);
+    font-family: "Peralta", cursive;
+  }
+  .contact-h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 15px;
+  }
+  .info-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }
+  .info-icons{
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  
+}

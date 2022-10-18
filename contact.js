@@ -1,3 +1,4 @@
+// POST method
 let draw = document.getElementById("draw");
 let draw_btn = document.getElementById("draw_btn");
 let form = document.getElementById("form");
@@ -25,7 +26,7 @@ form.addEventListener("submit", function (event) {
   } else if (draw.value.length < 5 || draw.value.length > 5) {
     alert("there is not five number chacked it");
   } else {
-    alert("Your data has been sent, good luck");
+    alert("Your massage has been sent, good luck");
     return draw;
   }
 });
@@ -56,3 +57,13 @@ document.querySelectorAll(".nav_item").forEach((y) =>
     nav_menu.classList.remove("active");
   })
 );
+
+//scroll up event
+let scroll_button = document.querySelector(".scroll-up");
+
+scroll_button.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

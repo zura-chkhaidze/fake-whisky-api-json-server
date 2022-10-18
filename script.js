@@ -58,7 +58,7 @@ function currentSlide(prev) {
   showImage((slideIndex = prev));
 }
 
-//validation for wiskey shop
+//validation for wiskey shop and localstorage
 
 function show_error(input, message) {
   const formControl = input.parentElement;
@@ -146,8 +146,8 @@ scroll_button.addEventListener("click", function () {
 });
 // fetch API GET  and DELETE method
 let delete_btn = document.getElementById("delete-btn");
-let bayers_div = document.querySelector(".bayers-div");
-let bayers_section = document.getElementById(".bayers-section");
+let bayers_div = document.querySelector(".buyers-div");
+let bayers_section = document.getElementById(".buyers-section");
 
 function Database() {
   let request = new XMLHttpRequest();
@@ -171,7 +171,7 @@ function Database() {
       li.appendChild(p);
       li.appendChild(img);
     });
-    document.querySelector(".bayers-div").appendChild(ul);
+    document.querySelector(".buyers-div").appendChild(ul);
   }
   request.addEventListener("load", received_data);
   request.open("GET", "https://reqres.in/api/users?page=2");
