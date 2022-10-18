@@ -716,3 +716,60 @@ h2 {
 .info-info {
   font-size: 20px;
 }
+/*about us*/
+.accordion-section{
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.accordion {
+  font-size:30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.label {
+  background-color: grey;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  font-family: "Peralta", cursive;
+}
+
+.label::before {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.content {
+  font-size: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 0;
+  position: relative;
+  transition: 2s ease;
+  font-family: "Peralta", cursive;
+}
+.content::-webkit-scrollbar{
+  display: none;
+}
+
+.accordion-box.active .content{
+  height: 100px;
+  padding: 10px;
+
+}
+
+.accordion-box.active .label::before{
+  content: '-';
+}
