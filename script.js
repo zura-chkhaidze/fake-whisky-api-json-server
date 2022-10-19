@@ -136,6 +136,20 @@ form.addEventListener("submit", function (item) {
 });
 
 //password show/hide
+let show_hide = document.getElementById("show-hide");
+show_hide.addEventListener("click", function () {
+  if (show_hide.classList.contains("fa-eye")) {
+    this.classList.toggle("fa-eye-slash");
+    this.classList.toggle("fa-eye");
+
+    password.setAttribute("type", "text");
+  } else {
+    password.setAttribute("type", "password");
+
+    this.classList.toggle("fa-eye");
+    this.classList.toggle("fa-eye-slash");
+  }
+});
 
 //scroll up event
 let scroll_button = document.querySelector(".scroll-up");

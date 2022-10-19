@@ -300,6 +300,12 @@ h2 {
   margin: 0 auto;
   transform: translateX(-12px);
 }
+.pass-show{
+  position: absolute;
+  margin-top: 4px;
+  z-index: 2;
+  margin-left: 375px;
+}
 /* scroll up event*/
 
 .scroll-up,
