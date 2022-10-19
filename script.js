@@ -135,6 +135,8 @@ form.addEventListener("submit", function (item) {
   }
 });
 
+//password show/hide
+
 //scroll up event
 let scroll_button = document.querySelector(".scroll-up");
 

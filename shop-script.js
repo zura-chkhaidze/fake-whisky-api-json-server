@@ -13,7 +13,6 @@ let randerPosts = async () => {
     <h2 class="drink-name">${element.name}</h2>
     <h3 class="prices">${element.price}</h3>
     <h3 class="click-to-buy">${element.buy}</h3>
-    <h3 class="description">${element.description}</h3>
   </div>
     `;
   });
