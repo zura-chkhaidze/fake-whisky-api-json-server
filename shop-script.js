@@ -1,3 +1,5 @@
+// whiskey Shop გვერდი მუშაობს , localhost3000 -ზე გასაშვბად ტერმინალში გაუშვით : npm run json:server
+
 //shop
 
 let shop_main_div = document.getElementById("whiskey-main-div");
